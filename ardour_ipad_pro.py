@@ -180,8 +180,8 @@ tab.append(osc_element('rotaryv', name="master_meter", x=strip['meter'],
 
 tab.append(osc_element('led', name=f"solos_active", x=strip['leds'],
     y=y+5, osc="/cancel_all_solos", color="green"))
-tab.append(osc_element('led', name=f"Master 2", x=strip['leds'],
-    y=y+30, color="red"))
+tab.append(osc_element('led', name=f"master_rec_enable", x=strip['leds'],
+    y=y+30, osc="/rec_enable_toggle", color="red"))
 
 
 tab.append(osc_element('rotaryh', name=f"master_pan", x=strip['rec'],
@@ -284,7 +284,7 @@ for i in range(6):
             osc=f"/strip/monitor_disk/{t}", color="orange", **led))
         tracks.append(osc_element('led', name=f"track_recenable_{t}",
             x=x+35, y=y-25,
-            osc=f"/strip/recenable/{t}", color="green", **led))
+            osc=f"/strip/recenable/{t}", color="red", **led))
         tracks.append(osc_element('led', name=f"track_recsafe_{t}",
             x=x+5, y=y-25,
             osc=f"/strip/record_safe/{t}", color="yellow", **led))
