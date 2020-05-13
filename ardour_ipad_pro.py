@@ -319,11 +319,11 @@ CONTROL_LEFT = 1066
 CONTROL_RIGHT = CONTROL_LEFT + 130
 CONTROL_WIDTH = 250
 
-TOP = TOP - 90
+TOP = TOP - 120
 
 tracks.append(osc_element('labelv', name="select_name", 
     x=TOP, y=CONTROL_LEFT, color="red", outline="true", 
-    w=30, h=250, osc="/select/name", text="No track selected"))
+    w=60, h=250, osc="/select/name", size=18, text="No track selected"))
 tracks.append(osc_element('labelv', name="select_group", 
     x=TOP-40, y=CONTROL_LEFT,
     w=30, h=250, osc="/select/group", text="-"))
@@ -334,27 +334,30 @@ track_button("/transport_play", TOP, CONTROL_RIGHT, "Play", "green")
 track_button("/cancel_all_solos", TOP-60, CONTROL_LEFT, "Solos", "green")
 
 tracks.append(osc_element('faderh', name="select_fader", color="red",
-    x=510, y=CONTROL_LEFT, h=60, w=200,
+    x=450, y=CONTROL_LEFT+50, h=60, w=250,
     osc="/select/fader"))
 tracks.append(osc_element('faderh', name="select_meter", color="green",
-    x=510, y=CONTROL_LEFT+70, h=20, w=200,
+    x=450, y=CONTROL_LEFT+120, h=20, w=250,
     osc="/select/meter"))
+tracks.append(osc_element('rotaryh', name="select_trim", color="purple",
+    x=630, y=CONTROL_LEFT+150, h=60, w=60,
+    osc="/select/trimdB", centered="true", value_from=-20, value_to=20))
 
-TOP = 500
+TOP = 400
 tracks.append(osc_element('faderv', name="track_pan",
-    x=TOP-40, y=CONTROL_LEFT, w=30, h=CONTROL_WIDTH, color="yellow",
+    x=TOP, y=CONTROL_LEFT, w=30, h=CONTROL_WIDTH, color="yellow",
     osc="/select/pan_stereo_position", centered="true", inverted="true"))
 tracks.append(osc_element('faderv', name="track_pan_width",
-    x=TOP-80, y=CONTROL_LEFT, w=30, h=120, color="brown",
+    x=TOP-40, y=CONTROL_LEFT, w=30, h=120, color="brown",
     osc="/select/pan_stereo_width", value_from="0.5"))
 tracks.append(osc_element('labelv', name="track_pan_width_label",
-    x=TOP-80, y=CONTROL_LEFT, w=30, h=120, color="yellow",
-    background="false", text="Stereo Width", inverted="true"))
+    x=TOP-40, y=CONTROL_LEFT, w=30, h=120, color="yellow",
+    background="false", text="Stereo Width"))
 tracks.append(osc_element('faderv', name="track_automation",
-    x=TOP-120, y=CONTROL_LEFT, w=30, h=120, color="orange",
+    x=TOP-40, y=CONTROL_RIGHT, w=30, h=120, color="orange",
     osc="/select/fader/automation", value_to=3))
 tracks.append(osc_element('labelv', name="track_automation_mode",
-    x=TOP-120, y=CONTROL_LEFT, w=30, h=120, color="yellow", background="false",
+    x=TOP-40, y=CONTROL_RIGHT, w=30, h=120, color="yellow", background="false",
     osc="/select/fader/automation_name", text="-"))
     
 
