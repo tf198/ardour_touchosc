@@ -3,6 +3,8 @@
 ### iPad Pro ###
 [Ardour iPad Pro.touchosc](Ardour%20iPad%20Pro.touchosc)
 
+![Screenshot](screenshots/ipad_pro_20200513.png)
+
 A 12 channel mixer for Ardour.  I find it much easier to tweek the levels
 (both manual and automation) on my iPad Pro than with the mouse.
 
