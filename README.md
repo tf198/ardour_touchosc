@@ -1,14 +1,16 @@
-## Ardour Mixer for TouchOSC ##
+## Ardour Profiles for TouchOSC ##
+
+### [Ardour iPad Pro.touchosc] ###
 
 A 12 channel mixer for Ardour.  I find it much easier to tweek the levels
-(both manual and automation) on the iPad than with the mouse.
+(both manual and automation) on my iPad Pro than with the mouse.
 
 This is still work in progress.  The mixer is pretty much finished but I am
 still playing around with the track editor.
 
 ### Installing ###
 
-* Download the "Ardour iPad Pro.touchosc" file to your iPad.
+* Download the required `.touchosc` file to your iPad.
 * Use the Files app to move it to 'TouchOSC' folder
 * Start TouchOSC and select the profile
 
