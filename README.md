@@ -1,6 +1,7 @@
 ## Ardour Profiles for TouchOSC ##
 
-### [Ardour iPad Pro.touchosc](Ardour iPad Pro.touchosc) ###
+### iPad Pro ###
+[Ardour iPad Pro.touchosc](Ardour%20iPad%20Pro.touchosc)
 
 A 12 channel mixer for Ardour.  I find it much easier to tweek the levels
 (both manual and automation) on my iPad Pro than with the mouse.
